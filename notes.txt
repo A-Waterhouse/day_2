@@ -1,0 +1,50 @@
+modules (parts of node)
+
+console.log(module)
+run node filename
+shows meta data about the js file
+
+module is object, can be mutated and can share stuff between files
+
+each file has its own module
+
+used by putting
+module.exports = variable
+into js file
+
+variable is available to other js files
+
+in 2nd js file require('./file1.js') is used to link the file, the dot is used to show its in the same file
+
+both file 1 and 2 are in same folder
+
+file 2 is run in terminal, and info from file 1 can be used
+
+module is variable that represents a link to a file
+
+an array can be used to collect the data together to enable more variables to be used
+now the array is shared between the files
+
+object is better to use so the labels can be applied to the values
+
+then the log in file 2 can use the standard object format key.object
+
+if variable and key have same name the key.object format doesnt have to be used
+
+key.key becomes just key
+
+functions can also be made available to other files
+individually or all at once
+
+functions are bundled into an object
+the key in the 2nd file is invoked
+
+modules.exports should be at the bottom of the file
+use require at the top of the js file
+
+to check you are exporting use console.log(module ) and check what it says in exports, default is empty object
+
+when you require from another file the entire file is executed
+require will run the whole file being required
+
+tasks are in calender
